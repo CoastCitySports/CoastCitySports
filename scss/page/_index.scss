@@ -1,0 +1,33 @@
+.main-title {
+  color: $color-1;
+}
+.table-date-p {
+  font-size: 0.8rem;
+  font-weight: 1;
+  margin-left: 1rem;
+  margin-top: 2rem;
+}
+.img-team-table-index {
+  width: 2rem;
+  margin-right: 0.5rem;
+}
+td {
+  font-family: "Exo 2", serif;
+}
+
+.colorful-text {
+  font-size: 2em;
+  background: linear-gradient(270deg, $color-2, $color-1, $color-3, $color-1);
+  background-size: 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: colors 5s linear infinite;
+}
+@keyframes colors {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
