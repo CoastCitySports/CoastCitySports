@@ -1,6 +1,5 @@
 * {
-  font-family: "Exo 2", serif;
-  font-size: 1.1rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 * {
@@ -10,187 +9,89 @@
   box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
-}
-
 ul,
 ol {
   list-style: none;
 }
 
-.footer-p {
-  font-size: 1.2rem;
-  font-family: cursive;
+.p-footer {
+  font-size: 1.3rem;
 }
 
-.footer-img-sponsor {
-  width: 2.3rem;
-  margin: 0 1rem 0 0;
+.h2-title {
+  margin-top: 0.5rem;
 }
 
-.footer-img-sponsor-ps5 {
-  width: 4.5rem;
-  margin: 0 1rem 0 0;
+.ah1 {
+  text-decoration: none;
+  color: black;
 }
 
-.class-img-1 {
+.icon-mainLogo {
   width: 3.5rem;
-  margin-right: 0.5rem;
 }
 
-.class-img-nav {
-  width: 1.7rem;
-  margin-right: 0.5rem;
-}
-
-.word-a {
-  font-weight: bold;
-  font-size: 1.2rem;
-  margin-top: 0.3rem;
-  margin-bottom: 0.3rem;
+.icon-logo {
+  width: 2.9rem;
 }
 
 .img-calendar {
   width: 2rem;
 }
 
-#date1 {
-  display: none;
-}
-
-#date2 {
-  display: none;
-}
-
-#date3 {
-  display: none;
-}
-
-#date4 {
-  display: none;
-}
-
-#date5 {
-  display: none;
-}
-
-#date6 {
-  display: none;
-}
-
-#date7 {
-  display: none;
-}
-
-#date8 {
-  display: none;
-}
-
-#date9 {
-  display: none;
-}
-
-#date10 {
-  display: none;
-}
-
-#date11 {
-  display: none;
-}
-
-#date12 {
-  display: none;
-}
-
-#date13 {
-  display: none;
-}
-
-#date14 {
-  display: none;
-}
-
-.img-coach {
-  width: 2rem;
-}
-
-.winrate-img {
-  width: 2rem;
-  margin-right: 1rem;
-}
-
-.img-coach-inactive {
-  width: 1.7rem;
-}
-
-.img-cup {
-  width: 2rem;
-}
-
-.coach-winrate-img {
-  width: 2rem;
-  margin-right: 1rem;
-}
-
-.league-cup-img {
-  width: 3rem;
-  margin-right: 1rem;
-}
-
-.icon-leaguecup-history {
-  width: 5rem;
-}
-
-.main-title {
-  color: #f2dea2;
-}
-
-.table-date-p {
+.title-section-p {
   font-size: 0.8rem;
-  font-weight: 1;
-  margin-left: 1rem;
-  margin-top: 2rem;
+  font-weight: 400;
 }
 
-.img-team-table-index {
-  width: 2rem;
+.img-tab {
+  width: 1.5rem;
+}
+
+.img-gallerie {
+  width: 100%;
+}
+
+.img-logo-history {
+  width: 4rem;
+}
+
+.svg-history {
   margin-right: 0.5rem;
 }
 
-td {
-  font-family: "Exo 2", serif;
+.img-carouel-h {
+  height: 20.8rem;
 }
 
-.colorful-text {
-  font-size: 2em;
-  background: linear-gradient(270deg, #112241, #f2dea2, #112140, #f2dea2);
-  background-size: 400%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: colors 5s linear infinite;
+.title-section {
+  font-size: 1.5rem;
 }
 
-@keyframes colors {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
-  }
-}
-.img-team-table-league {
-  width: 2rem;
-}
-
-.p-regulation {
+.next-match-span {
   font-size: 0.8rem;
-  font-weight: 200;
 }
 
-.img-card-team {
+.next-match-imgteam {
+  width: 3rem;
   margin: 1rem;
-  width: 2rem;
+}
+
+.scorers-img {
+  width: 1.9rem;
+  margin-right: 0.5rem;
+}
+
+.scorers-goals {
+  margin-right: 2rem;
+}
+
+.div-m {
+  margin: 0 3rem 0 3rem;
+}
+
+.icon-asterisk {
+  margin-right: 0.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

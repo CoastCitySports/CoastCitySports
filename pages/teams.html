@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coast City Sports</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="icon"
+      href="../assets/icons/main-logo/CoastCityLeague.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="container text-center mt-3">
+        <div class="row">
+          <!-- navbar: -->
+          <div class="col">
+            <a
+              class="btn"
+              data-bs-toggle="offcanvas"
+              href="#offcanvasExample"
+              role="button"
+              aria-controls="offcanvasExample"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="30"
+                fill="currentColor"
+                class="bi bi-list"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+                />
+              </svg>
+            </a>
+
+            <div
+              class="offcanvas offcanvas-start"
+              tabindex="-1"
+              id="offcanvasExample"
+              aria-labelledby="offcanvasExampleLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                  <img
+                    src="../assets/icons/main-logo/CoastCityLeague.png"
+                    class="icon-mainLogo"
+                  />
+                  <a href="../index.html" class="ah1">Coast City Sports</a>
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+
+              <div class="offcanvas-body">
+                <div>
+                  <nav class="navbar">
+                    <!-- calendar: -->
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="../pages/calendar.html"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="25"
+                          fill="currentColor"
+                          class="bi bi-calendar-date m-3"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M6.445 11.688V6.354h-.633A13 13 0 0 0 4.5 7.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61zm1.188-1.305c.047.64.594 1.406 1.703 1.406 1.258 0 2-1.066 2-2.871 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82zm2.953-2.317c0 .696-.559 1.18-1.184 1.18-.601 0-1.144-.383-1.144-1.2 0-.823.582-1.21 1.168-1.21.633 0 1.16.398 1.16 1.23"
+                          />
+                          <path
+                            d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"
+                          /></svg
+                        >Calendario</a
+                      >
+                    </div>
+
+                    <!-- clasification: -->
+                    <div class="container-fluid mt-3">
+                      <a
+                        class="navbar-brand"
+                        href="../pages/classification.html"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="25"
+                          fill="currentColor"
+                          class="bi bi-bar-chart-steps m-3"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M.5 0a.5.5 0 0 1 .5.5v15a.5.5 0 0 1-1 0V.5A.5.5 0 0 1 .5 0M2 1.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5zm2 4a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5zm2 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1-.5-.5zm2 4a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5z"
+                          /></svg
+                        >Coast City League</a
+                      >
+                    </div>
+
+                    <!-- cup: -->
+                    <div class="container-fluid mt-3">
+                      <a class="navbar-brand" href="../pages/cup.html"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="25"
+                          fill="currentColor"
+                          class="bi bi-trophy m-3"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5q0 .807-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33 33 0 0 1 2.5.5m.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935m10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935M3.504 1q.01.775.056 1.469c.13 2.028.457 3.546.87 4.667C5.294 9.48 6.484 10 7 10a.5.5 0 0 1 .5.5v2.61a1 1 0 0 1-.757.97l-1.426.356a.5.5 0 0 0-.179.085L4.5 15h7l-.638-.479a.5.5 0 0 0-.18-.085l-1.425-.356a1 1 0 0 1-.757-.97V10.5A.5.5 0 0 1 9 10c.516 0 1.706-.52 2.57-2.864.413-1.12.74-2.64.87-4.667q.045-.694.056-1.469z"
+                          /></svg
+                        >Golden Beach Cup</a
+                      >
+                    </div>
+
+                    <!-- coach: -->
+                    <div class="container-fluid mt-3">
+                      <a class="navbar-brand" href="../pages/coach.html"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="25"
+                          fill="currentColor"
+                          class="bi bi-person-square m-3"
+                          viewBox="0 0 16 16"
+                        >
+                          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                          <path
+                            d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"
+                          /></svg
+                        >Director Técnico</a
+                      >
+                    </div>
+
+                    <!-- teams: -->
+                    <div class="container-fluid mt-3">
+                      <a class="navbar-brand" href="../pages/teams.html"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="25"
+                          fill="currentColor"
+                          class="bi bi-globe m-3"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z"
+                          /></svg
+                        >Equipos</a
+                      >
+                    </div>
+
+                    <!-- galleries: -->
+                    <div class="container-fluid mt-3">
+                      <a class="navbar-brand" href="../pages/galleries.html"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="25"
+                          fill="currentColor"
+                          class="bi bi-camera-reels m-3"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0M1 3a2 2 0 1 0 4 0 2 2 0 0 0-4 0"
+                          />
+                          <path
+                            d="M9 6h.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2zm6 8.73V7.27l-3.5 1.555v4.35zM1 8v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1"
+                          />
+                          <path
+                            d="M9 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6M7 3a2 2 0 1 1 4 0 2 2 0 0 1-4 0"
+                          /></svg
+                        >Galería</a
+                      >
+                    </div>
+
+                    <!-- history: -->
+                    <div class="container-fluid mt-3">
+                      <a class="navbar-brand" href="../pages/history.html"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="25"
+                          fill="currentColor"
+                          class="bi bi-hourglass-split m-3"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z"
+                          /></svg
+                        >Historia</a
+                      >
+                    </div>
+
+                    <!-- news: -->
+                    <div class="container-fluid mt-3">
+                      <a class="navbar-brand" href="../pages/news.html">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="25"
+                          fill="currentColor"
+                          class="bi bi-newspaper m-3"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5z"
+                          />
+                          <path
+                            d="M2 3h10v2H2zm0 3h4v3H2zm0 4h4v1H2zm0 2h4v1H2zm5-6h2v1H7zm3 0h2v1h-2zM7 8h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2z"
+                          />
+                        </svg>
+                        Noticias</a
+                      >
+                    </div>
+
+                    <!-- regulation: -->
+                    <div class="container-fluid mt-3">
+                      <a class="navbar-brand" href="../pages/regulation.html"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="25"
+                          fill="currentColor"
+                          class="bi bi-rulers m-3"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M1 0a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h5v-1H2v-1h4v-1H4v-1h2v-1H2v-1h4V9H4V8h2V7H2V6h4V2h1v4h1V4h1v2h1V2h1v4h1V4h1v2h1V2h1v4h1V1a1 1 0 0 0-1-1z"
+                          /></svg
+                        >Regulación</a
+                      >
+                    </div>
+
+                    <!-- shop: -->
+                    <div class="container-fluid mt-3">
+                      <a class="navbar-brand" href="../pages/shop.html"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="25"
+                          fill="currentColor"
+                          class="bi bi-cart3 m-3"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
+                          /></svg
+                        >Shop</a
+                      >
+                    </div>
+
+                    <!-- community: -->
+                    <div class="container-fluid mt-3">
+                      <a class="navbar-brand" href="../pages/community.html"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="25"
+                          fill="currentColor"
+                          class="bi bi-chat-square-dots m-3"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"
+                          />
+                          <path
+                            d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"
+                          /></svg
+                        >Comunidad</a
+                      >
+                    </div>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- main title: -->
+          <div class="col-7">
+            <h2 class="h2-title">
+              <a href="../index.html" class="ah1">Coast City Sports</a>
+            </h2>
+          </div>
+
+          <!-- logo: -->
+          <div class="col">
+            <img
+              src="../assets/icons/main-logo/CoastCityLeague.png"
+              class="icon-logo"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="mt-4 p-2">
+        <div>
+          <p class="title-section">Equipos</p>
+        </div>
+
+        <div>
+          <!-- Fútbol Club Barcelona -->
+          <div class="card">
+            <div class="card-header">
+              <img src="../assets/teams/team_futbol_club_barcelona.png" />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Fútbol Club Barcelona</h5>
+              <p class="card-text">
+                Barcelona, fundado en 1899, es uno de los clubes más
+                emblemáticos del mundo. Conocido por su camiseta azul y grana,
+                ha ganado múltiples títulos de La Liga y Champions League.
+                Famoso por su estilo de juego "tiki-taka", el Barça ha tenido
+                leyendas como Lionel Messi, Xavi e Iniesta. Su rivalidad con el
+                Real Madrid, conocida como "El Clásico", es uno de los
+                enfrentamientos más seguidos del fútbol. El club es un símbolo
+                de la cultura catalana y del deporte a nivel global.
+              </p>
+              <p>Activo | David Villaroel</p>
+              <a href="../pages/coach.html" class="btn btn-primary"
+                >Ver Directores Técnicos</a
+              >
+            </div>
+          </div>
+
+          <!-- Real Madrid Club de Fútbol -->
+          <div class="card mt-4">
+            <div class="card-header">
+              <img src="../assets/teams/team_real_madrid_club_de_futbol.png" />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Real Madrid Club de Fútbol</h5>
+              <p class="card-text">
+                Real Madrid, fundado en 1902, es uno de los clubes más exitosos
+                del mundo. Conocido por su camiseta blanca, ha ganado numerosas
+                Ligas, Copas del Rey y Champions League, siendo el equipo con
+                más títulos europeos. Destacan jugadores legendarios como
+                Alfredo Di Stéfano, Cristiano Ronaldo y Raúl. Su rivalidad más
+                famosa es con el FC Barcelona, conocida como "El Clásico".
+              </p>
+              <p>Inactivo | Coast City Sports</p>
+              <a href="../pages/coach.html" class="btn btn-primary"
+                >Ver Directores Técnicos</a
+              >
+            </div>
+          </div>
+
+          <!-- Associazione Calcio Milan -->
+          <div class="card mt-4">
+            <div class="card-header">
+              <img src="../assets/teams/team_associazione_calcio_milan.png" />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Associazione Calcio Milan</h5>
+              <p class="card-text">
+                AC Milan, fundado en 1899, es uno de los clubes más exitosos de
+                Italia y Europa. Conocido por su camiseta roja y negra, ha
+                ganado numerosos títulos de Serie A y Champions League. El Milan
+                ha tenido grandes jugadores como Paolo Maldini y Marco Van
+                Basten. Es famoso por su rivalidad con el Inter de Milán,
+                conocido como el "Derbi della Madonnina". El club es un símbolo
+                de excelencia en el fútbol italiano y mundial.
+              </p>
+              <p>Activo | Alejandro Ferreyra</p>
+              <a href="../pages/coach.html" class="btn btn-primary"
+                >Ver Directores Técnicos</a
+              >
+            </div>
+          </div>
+
+          <!-- Liverpool Football Club -->
+          <div class="card mt-4">
+            <div class="card-header">
+              <img src="../assets/teams/team_liverpool_football_club.png" />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Liverpool Football Club</h5>
+              <p class="card-text">
+                Liverpool, fundado en 1892, es uno de los clubes más exitosos de
+                Inglaterra y Europa. Conocido por su camiseta roja, ha ganado
+                múltiples títulos de la Premier League y seis Champions League,
+                destacando su histórica victoria en 2005. Famoso por su afición
+                apasionada y su himno "You'll Never Walk Alone", el club tiene
+                una intensa rivalidad con el Manchester United y el Everton. El
+                Liverpool es un símbolo del fútbol inglés, conocido por su rica
+                historia y tradición.
+              </p>
+              <p>Inactivo | Coast City Sports</p>
+              <a href="../pages/coach.html" class="btn btn-primary"
+                >Ver Directores Técnicos</a
+              >
+            </div>
+          </div>
+
+          <!-- Fußball-Club Bayern München e. V. -->
+          <div class="card mt-4">
+            <div class="card-header">
+              <img src="../assets/teams/team_bayern_de_munich.png" />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Fußball Club Bayern München e. V.</h5>
+              <p class="card-text">
+                Bayern de Múnich, fundado en 1900, es el club de fútbol más
+                exitoso de Alemania. Conocido por su camiseta roja, ha ganado
+                numerosas Bundesliga y Copas de Alemania, así como múltiples
+                títulos de la Champions League. Destacan jugadores legendarios
+                como Franz Beckenbauer y Philipp Lahm. El Bayern es conocido por
+                su fuerte base de aficionados y su dominio en el fútbol alemán,
+                siendo un símbolo de éxito y tradición en el deporte.
+              </p>
+              <p>Activo | Valentín Álvarez</p>
+              <a href="../pages/coach.html" class="btn btn-primary"
+                >Ver Directores Técnicos</a
+              >
+            </div>
+          </div>
+
+          <!-- Amsterdamsche Football Club Ajax -->
+          <div class="card mt-4">
+            <div class="card-header">
+              <img src="../assets/teams/team_ajax_de_amsterdam.png" />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Amsterdamsche Football Club Ajax</h5>
+              <p class="card-text">
+                Ajax, fundado en 1900, es uno de los clubes más exitosos de los
+                Países Bajos. Conocido por su camiseta roja y blanca, ha ganado
+                múltiples títulos de Eredivisie y es famoso por su legado en la
+                Champions League, ganándola en varias ocasiones, especialmente
+                en los años 70 y 90. Es pionero en el desarrollo de jóvenes
+                talentos y su estilo de juego, conocido como "fútbol total", ha
+                influido en generaciones. El club es un símbolo del fútbol
+                holandés y de la ciudad de Ámsterdam.
+              </p>
+              <p>Activo | Fernando Álvarez</p>
+              <a href="../pages/coach.html" class="btn btn-primary"
+                >Ver Directores Técnicos</a
+              >
+            </div>
+          </div>
+
+          <!-- Manchester United Football Club -->
+          <div class="card mt-4">
+            <div class="card-header">
+              <img src="../assets/teams/team_manchester_united.png" />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Manchester United Football Club</h5>
+              <p class="card-text">
+                Manchester United, fundado en 1878, es uno de los clubes más
+                exitosos del mundo. Conocido por su camiseta roja, ha ganado
+                múltiples títulos de la Premier League y Champions League. El
+                club alcanzó la fama global bajo la dirección de Sir Alex
+                Ferguson, quien lo guió a numerosos triunfos en las décadas de
+                1990 y 2000. Es famoso por su rivalidad con el Liverpool. El
+                Manchester United es un símbolo del fútbol inglés y un ícono del
+                deporte global.
+              </p>
+              <p>Activo | Cristian Hernández</p>
+              <a href="../pages/coach.html" class="btn btn-primary"
+                >Ver Directores Técnicos</a
+              >
+            </div>
+          </div>
+
+          <!-- Football Club Internazionale Milano -->
+          <div class="card mt-4">
+            <div class="card-header">
+              <img src="../assets/teams/team_inter_de_milan.png" />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Football Club Internazionale Milano</h5>
+              <p class="card-text">
+                Inter de Milán, fundado en 1908, es un club de fútbol italiano
+                conocido por sus colores negro y azul. Ha ganado numerosos
+                títulos de Serie A y competiciones europeas, incluyendo la
+                Champions League. Destacan jugadores como Giuseppe Meazza y
+                Javier Zanetti. En 2010, bajo José Mourinho, logró un triplete
+                histórico. Es famoso por su rivalidad con el AC Milan.
+              </p>
+              <p>Activo | Federico Michelena</p>
+              <a href="../pages/coach.html" class="btn btn-primary"
+                >Ver Directores Técnicos</a
+              >
+            </div>
+          </div>
+
+          <!-- Sport Lisboa e Benfica -->
+          <div class="card mt-4">
+            <div class="card-header">
+              <img src="../assets/teams/team_sport_lisboa_benfica.png" />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Sport Lisboa e Benfica</h5>
+              <p class="card-text">
+                Benfica, fundado en 1904, es uno de los clubes más importantes
+                de Portugal. Ha ganado múltiples títulos de la Primeira Liga y
+                Copas de Portugal. En la década de 1960, alcanzó la fama
+                internacional al ganar dos Copas de Europa consecutivas. Su
+                estadio, el Estadio da Luz, es uno de los más grandes de Europa.
+                Benfica también es conocido por su gran base de aficionados y su
+                histórica rivalidad con el Oporto y Sporting de Lisboa.
+              </p>
+              <p>Inactivo | Coast City Sports</p>
+              <a href="../pages/coach.html" class="btn btn-primary"
+                >Ver Directores Técnicos</a
+              >
+            </div>
+          </div>
+
+          <!-- Nottingham Forest Football Club -->
+          <div class="card mt-4">
+            <div class="card-header">
+              <img src="../assets/teams/team_nottingham_forest.png" />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Nottingham Forest Football Club</h5>
+              <p class="card-text">
+                Nottingham Forest, fundado en 1865, es uno de los clubes más
+                antiguos de Inglaterra. Ha tenido períodos de éxito,
+                destacándose especialmente en la década de 1970 bajo la
+                dirección de Brian Clough, cuando ganó dos Copas de Europa (1979
+                y 1980) y varios títulos de liga. Su estadio, el City Ground, es
+                famoso por su ambiente. Aunque ha tenido altibajos en su
+                historia, Forest sigue siendo un club con una rica tradición y
+                una apasionada base de seguidores.
+              </p>
+              <p>Inactivo | Coast City Sports</p>
+              <a href="../pages/coach.html" class="btn btn-primary"
+                >Ver Directores Técnicos</a
+              >
+            </div>
+          </div>
+
+          <!-- Futebol Clube do Porto -->
+          <div class="card mt-4">
+            <div class="card-header">
+              <img src="../assets/teams/team_futbol_club_oporto.png" />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Futebol Clube do Porto</h5>
+              <p class="card-text">
+                Porto, fundado en 1893, es uno de los clubes más exitosos de
+                Portugal. Ha ganado múltiples títulos de la Primeira Liga y
+                Copas de Portugal. En la década de 1980 y 1990, se consolidó
+                como una potencia europea, logrando la Copa de Europa en 1987 y
+                2004, bajo la dirección de José Mourinho. Su estadio, el Estadio
+                do Dragão, es moderno y emblemático. Porto tiene una intensa
+                rivalidad con el Benfica y el Sporting de Lisboa, siendo parte
+                fundamental de la cultura futbolística portuguesa.
+              </p>
+              <p>Inactivo | Coast City Sports</p>
+              <a href="../pages/coach.html" class="btn btn-primary"
+                >Ver Directores Técnicos</a
+              >
+            </div>
+          </div>
+
+          <!-- Chelsea Football Club -->
+          <div class="card mt-4">
+            <div class="card-header">
+              <img src="../assets/teams/team_chelsea_football_club.png" />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Chelsea Football Club</h5>
+              <p class="card-text">
+                Chelsea, fundado en 1905, es un club de fútbol inglés con sede
+                en Londres. Conocido por su camiseta azul, ha ganado múltiples
+                títulos de la Premier League y varias Champions League,
+                destacando especialmente su victoria en 2012 y 2021. El club
+                ganó notoriedad internacional tras la inversión del propietario
+                ruso Roman Abramovich en 2003. Famoso por su afición apasionada
+                y su estadio, Stamford Bridge, el Chelsea es uno de los clubes
+                más exitosos y reconocidos en el fútbol mundial.
+              </p>
+              <p>Inactivo | Coast City Sports</p>
+              <a href="../pages/coach.html" class="btn btn-primary"
+                >Ver Directores Técnicos</a
+              >
+            </div>
+          </div>
+
+          <!-- Celtic Football Club -->
+          <div class="card mt-4">
+            <div class="card-header">
+              <img src="../assets/teams/team_celtic.png" />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Celtic Football Club</h5>
+              <p class="card-text">
+                Celtic, fundado en 1887 en Glasgow, Escocia, es uno de los
+                clubes más históricos y exitosos del fútbol. Originalmente
+                creado para ayudar a la comunidad irlandesa en Escocia, el
+                Celtic ha ganado numerosos títulos de liga y copas, destacándose
+                en la década de 1960 cuando se convirtió en el primer club
+                británico en ganar la Copa de Europa en 1967. Su estadio, Celtic
+                Park, es conocido como "Paradise" y tiene una gran base de
+                aficionados. El club mantiene una intensa rivalidad con el
+                Rangers, conocida como el "Old Firm".
+              </p>
+              <p>Inactivo | Coast City Sports</p>
+              <a href="../pages/coach.html" class="btn btn-primary"
+                >Ver Directores Técnicos</a
+              >
+            </div>
+          </div>
+
+          <!-- Ballspielverein Borussia 09 e.V. Dortmund -->
+          <div class="card mt-4">
+            <div class="card-header">
+              <img src="../assets/teams/team_borussia_dortmund.png" />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">
+                Ballspielverein Borussia 09 e.V. Dortmund
+              </h5>
+              <p class="card-text">
+                Borussia Dortmund, fundado en 1909, es uno de los clubes más
+                importantes de Alemania. Conocido por su camiseta amarilla y
+                negra, ha ganado múltiples títulos de Bundesliga y una Champions
+                League en 1997. Es famoso por su apasionada afición y su
+                estadio, Signal Iduna Park. El Dortmund es conocido por su
+                enfoque en el desarrollo de jóvenes talentos y su estilo de
+                juego ofensivo, convirtiéndose en un símbolo del fútbol alemán.
+              </p>
+              <p>Activo | Christian Rodríguez</p>
+              <a href="../pages/coach.html" class="btn btn-primary"
+                >Ver Directores Técnicos</a
+              >
+            </div>
+          </div>
+
+          <!-- Olympique de Marseille -->
+          <div class="card mt-4">
+            <div class="card-header">
+              <img src="../assets/teams/team_olympique_de_marsella.png" />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Olympique de Marseille</h5>
+              <p class="card-text">
+                Olympique de Marsella, fundado en 1899, es uno de los clubes más
+                históricos de Francia. Conocido por su camiseta blanca, ha
+                ganado múltiples títulos de Ligue 1 y es famoso por su victoria
+                en la Champions League en 1993, siendo el primer club francés en
+                lograrlo. El OM tiene una intensa rivalidad con el Paris
+                Saint-Germain, conocida como "Le Classique". Con una gran
+                afición y un estadio emblemático, el Stade Vélodrome, el
+                Marsella es un símbolo del fútbol francés y de la ciudad de
+                Marsella.
+              </p>
+              <p>Activo | Darío Álvarez</p>
+              <a href="../pages/coach.html" class="btn btn-primary"
+                >Ver Directores Técnicos</a
+              >
+            </div>
+          </div>
+
+          <!-- Manchester City Football Club -->
+          <div class="card mt-4">
+            <div class="card-header">
+              <img
+                src="../assets/teams/team_manchester_city_football_club.png"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Manchester City Football Club</h5>
+              <p class="card-text">
+                Manchester City, fundado en 1880 como St. Mark's, es un club de
+                fútbol inglés con sede en Manchester. Conocido por su camiseta
+                celeste, ha ganado múltiples títulos de la Premier League,
+                especialmente desde 2010, tras la inversión del grupo
+                propietario de Abu Dhabi. Bajo la dirección de entrenadores como
+                Pep Guardiola, el City ha destacado por su estilo de juego
+                ofensivo y ha logrado varios títulos importantes, incluyendo la
+                Champions League en 2023. El club se ha convertido en uno de los
+                más exitosos y reconocidos a nivel mundial.
+              </p>
+              <p>Inactivo | Coast City Sports</p>
+              <a href="../pages/coach.html" class="btn btn-primary"
+                >Ver Directores Técnicos</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-body-tertiary text-center mt-5">
+      <!-- title: -->
+      <div>
+        <p class="p-footer">Coast City Sports</p>
+      </div>
+
+      <!-- sponsor: -->
+      <div class="container text-center mt-4">
+        <div class="row mt-2">
+          <div class="col m-2">
+            <a href="https://www.ea.com/" target="_blank"
+              ><img src="../assets/icons/footer/icon-electronics-arts.png"
+            /></a>
+          </div>
+          <div class="col m-2">
+            <a href="https://www.tencent.com/en-us/" target="_blank"
+              ><img src="../assets/icons/footer/icon-tencent.png"
+            /></a>
+          </div>
+        </div>
+
+        <div class="row mt-2">
+          <div class="col m-2">
+            <a href="https://www.apple.com/" target="_blank"
+              ><img src="../assets/icons/footer/icon-apple.png"
+            /></a>
+          </div>
+          <div class="col m-2">
+            <a href="https://www.samsung.com/uy/" target="_blank"
+              ><img src="../assets/icons/footer/icon-samsung.png"
+            /></a>
+          </div>
+        </div>
+
+        <div class="row mt-2">
+          <div class="col m-2">
+            <a href="https://www.nike.com/ie/" target="_blank"
+              ><img src="../assets/icons/footer/icon-nike.png"
+            /></a>
+          </div>
+          <div class="col m-2">
+            <a href="https://www.pumastore.com.uy/" target="_blank"
+              ><img src="../assets/icons/footer/icon-puma.png"
+            /></a>
+          </div>
+        </div>
+
+        <div class="row mt-2">
+          <div class="col m-2">
+            <a href="https://www.fifa.com/en" target="_blank"
+              ><img src="../assets/icons/footer/icon-fifa.png"
+            /></a>
+          </div>
+          <div class="col m-2">
+            <a href="https://www.konami.com/en/" target="_blank"
+              ><img src="../assets/icons/footer/icon-konami.png"
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <div class="mt-5 pb-4">
+        <p class="p-footer">Contacto</p>
+
+        <div>
+          <a
+            href="mailto:coastcitysportsleaguecup@gmail.com"
+            class="btn btn-primary"
+            >Enviar Correo</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- scripts: -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

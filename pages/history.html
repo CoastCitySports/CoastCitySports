@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coast City Sports</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="icon"
+      href="../assets/icons/main-logo/CoastCityLeague.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="container text-center mt-3">
+        <div class="row">
+          <!-- navbar: -->
+          <div class="col">
+            <a
+              class="btn"
+              data-bs-toggle="offcanvas"
+              href="#offcanvasExample"
+              role="button"
+              aria-controls="offcanvasExample"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="30"
+                fill="currentColor"
+                class="bi bi-list"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+                />
+              </svg>
+            </a>
+
+            <div
+              class="offcanvas offcanvas-start"
+              tabindex="-1"
+              id="offcanvasExample"
+              aria-labelledby="offcanvasExampleLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                  <img
+                    src="../assets/icons/main-logo/CoastCityLeague.png"
+                    class="icon-mainLogo"
+                  />
+                  <a href="../index.html" class="ah1">Coast City Sports</a>
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+
+              <div class="offcanvas-body">
+                <div>
+                  <nav class="navbar">
+                    <!-- calendar: -->
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="../pages/calendar.html"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="25"
+                          fill="currentColor"
+                          class="bi bi-calendar-date m-3"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M6.445 11.688V6.354h-.633A13 13 0 0 0 4.5 7.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61zm1.188-1.305c.047.64.594 1.406 1.703 1.406 1.258 0 2-1.066 2-2.871 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82zm2.953-2.317c0 .696-.559 1.18-1.184 1.18-.601 0-1.144-.383-1.144-1.2 0-.823.582-1.21 1.168-1.21.633 0 1.16.398 1.16 1.23"
+                          />
+                          <path
+                            d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"
+                          /></svg
+                        >Calendario</a
+                      >
+                    </div>
+
+                    <!-- clasification: -->
+                    <div class="container-fluid mt-3">
+                      <a
+                        class="navbar-brand"
+                        href="../pages/classification.html"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="25"
+                          fill="currentColor"
+                          class="bi bi-bar-chart-steps m-3"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M.5 0a.5.5 0 0 1 .5.5v15a.5.5 0 0 1-1 0V.5A.5.5 0 0 1 .5 0M2 1.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5zm2 4a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5zm2 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1-.5-.5zm2 4a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5z"
+                          /></svg
+                        >Coast City League</a
+                      >
+                    </div>
+
+                    <!-- cup: -->
+                    <div class="container-fluid mt-3">
+                      <a class="navbar-brand" href="../pages/cup.html"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="25"
+                          fill="currentColor"
+                          class="bi bi-trophy m-3"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5q0 .807-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33 33 0 0 1 2.5.5m.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935m10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935M3.504 1q.01.775.056 1.469c.13 2.028.457 3.546.87 4.667C5.294 9.48 6.484 10 7 10a.5.5 0 0 1 .5.5v2.61a1 1 0 0 1-.757.97l-1.426.356a.5.5 0 0 0-.179.085L4.5 15h7l-.638-.479a.5.5 0 0 0-.18-.085l-1.425-.356a1 1 0 0 1-.757-.97V10.5A.5.5 0 0 1 9 10c.516 0 1.706-.52 2.57-2.864.413-1.12.74-2.64.87-4.667q.045-.694.056-1.469z"
+                          /></svg
+                        >Golden Beach Cup</a
+                      >
+                    </div>
+
+                    <!-- coach: -->
+                    <div class="container-fluid mt-3">
+                      <a class="navbar-brand" href="../pages/coach.html"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="25"
+                          fill="currentColor"
+                          class="bi bi-person-square m-3"
+                          viewBox="0 0 16 16"
+                        >
+                          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                          <path
+                            d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"
+                          /></svg
+                        >Director Técnico</a
+                      >
+                    </div>
+
+                    <!-- teams: -->
+                    <div class="container-fluid mt-3">
+                      <a class="navbar-brand" href="../pages/teams.html"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="25"
+                          fill="currentColor"
+                          class="bi bi-globe m-3"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z"
+                          /></svg
+                        >Equipos</a
+                      >
+                    </div>
+
+                    <!-- galleries: -->
+                    <div class="container-fluid mt-3">
+                      <a class="navbar-brand" href="../pages/galleries.html"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="25"
+                          fill="currentColor"
+                          class="bi bi-camera-reels m-3"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0M1 3a2 2 0 1 0 4 0 2 2 0 0 0-4 0"
+                          />
+                          <path
+                            d="M9 6h.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2zm6 8.73V7.27l-3.5 1.555v4.35zM1 8v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1"
+                          />
+                          <path
+                            d="M9 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6M7 3a2 2 0 1 1 4 0 2 2 0 0 1-4 0"
+                          /></svg
+                        >Galería</a
+                      >
+                    </div>
+
+                    <!-- history: -->
+                    <div class="container-fluid mt-3">
+                      <a class="navbar-brand" href="../pages/history.html"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="25"
+                          fill="currentColor"
+                          class="bi bi-hourglass-split m-3"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z"
+                          /></svg
+                        >Historia</a
+                      >
+                    </div>
+
+                    <!-- news: -->
+                    <div class="container-fluid mt-3">
+                      <a class="navbar-brand" href="../pages/news.html">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="25"
+                          fill="currentColor"
+                          class="bi bi-newspaper m-3"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5z"
+                          />
+                          <path
+                            d="M2 3h10v2H2zm0 3h4v3H2zm0 4h4v1H2zm0 2h4v1H2zm5-6h2v1H7zm3 0h2v1h-2zM7 8h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2z"
+                          />
+                        </svg>
+                        Noticias</a
+                      >
+                    </div>
+
+                    <!-- regulation: -->
+                    <div class="container-fluid mt-3">
+                      <a class="navbar-brand" href="../pages/regulation.html"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="25"
+                          fill="currentColor"
+                          class="bi bi-rulers m-3"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M1 0a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h5v-1H2v-1h4v-1H4v-1h2v-1H2v-1h4V9H4V8h2V7H2V6h4V2h1v4h1V4h1v2h1V2h1v4h1V4h1v2h1V2h1v4h1V1a1 1 0 0 0-1-1z"
+                          /></svg
+                        >Regulación</a
+                      >
+                    </div>
+
+                    <!-- shop: -->
+                    <div class="container-fluid mt-3">
+                      <a class="navbar-brand" href="../pages/shop.html"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="25"
+                          fill="currentColor"
+                          class="bi bi-cart3 m-3"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
+                          /></svg
+                        >Shop</a
+                      >
+                    </div>
+
+                    <!-- community: -->
+                    <div class="container-fluid mt-3">
+                      <a class="navbar-brand" href="../pages/community.html"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="25"
+                          fill="currentColor"
+                          class="bi bi-chat-square-dots m-3"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"
+                          />
+                          <path
+                            d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"
+                          /></svg
+                        >Comunidad</a
+                      >
+                    </div>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- main title: -->
+          <div class="col-7">
+            <h2 class="h2-title">
+              <a href="../index.html" class="ah1">Coast City Sports</a>
+            </h2>
+          </div>
+
+          <!-- logo: -->
+          <div class="col">
+            <img
+              src="../assets/icons/main-logo/CoastCityLeague.png"
+              class="icon-logo"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="mt-4 p-2">
+        <!-- title: -->
+        <div>
+          <p class="title-section">Historia</p>
+        </div>
+
+        <!-- league: -->
+        <div>
+          <div class="card">
+            <div class="card-header">
+              <img
+                src="../assets/icons/main-logo/CoastCityLeague.png"
+                class="img-logo-history"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">
+                Coast City League | Temporada 1 - 24/25
+              </h5>
+              <p class="card-text">
+                <!-- El Barcelona es el nuevo campeón de Coast City League. -->
+                <!-- El conjunto azulgrana conquistó su primer título liguero con David Villaroel. -->
+              </p>
+              <!-- <a
+                href="#"
+                download="nombre del archivo.pdf"
+                class="btn btn-primary"
+                >Descargar Resumen</a
+              > -->
+            </div>
+          </div>
+        </div>
+
+        <!-- cup: -->
+        <div class="mt-4">
+          <div class="card">
+            <div class="card-header">
+              <img
+                src="../assets/icons/main-logo/GoldenBeachCup.png"
+                class="img-logo-history"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Coast City League | Edición 1 - 2025</h5>
+              <p class="card-text">
+                <!-- El Barcelona es el nuevo campeón de Golden Beach Cup. -->
+                <!-- El conjunto azulgrana conquistó su primera copa con David Villaroel. -->
+              </p>
+              <!-- <a
+                href="#"
+                download="nombre del archivo.pdf"
+                class="btn btn-primary"
+                >Descargar Resumen</a
+              > -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-4 p-2">
+        <!-- title: -->
+        <div>
+          <p class="title-section">Historia DT</p>
+        </div>
+
+        <!-- DT: -->
+        <div>
+          <div class="accordion" id="accordionExample">
+            <!-- Valentín Álvarez: -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="false"
+                  aria-controls="collapseOne"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="30"
+                    fill="currentColor"
+                    class="bi bi-clock-history svg-history"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022zm2.004.45a7 7 0 0 0-.985-.299l.219-.976q.576.129 1.126.342zm1.37.71a7 7 0 0 0-.439-.27l.493-.87a8 8 0 0 1 .979.654l-.615.789a7 7 0 0 0-.418-.302zm1.834 1.79a7 7 0 0 0-.653-.796l.724-.69q.406.429.747.91zm.744 1.352a7 7 0 0 0-.214-.468l.893-.45a8 8 0 0 1 .45 1.088l-.95.313a7 7 0 0 0-.179-.483m.53 2.507a7 7 0 0 0-.1-1.025l.985-.17q.1.58.116 1.17zm-.131 1.538q.05-.254.081-.51l.993.123a8 8 0 0 1-.23 1.155l-.964-.267q.069-.247.12-.501m-.952 2.379q.276-.436.486-.908l.914.405q-.24.54-.555 1.038zm-.964 1.205q.183-.183.35-.378l.758.653a8 8 0 0 1-.401.432z"
+                    />
+                    <path
+                      d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0z"
+                    />
+                    <path
+                      d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5"
+                    /></svg
+                  >Valentin Álvarez
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body text-center">
+                  <strong>Partidos:</strong>
+                  <ul class="list-group">
+                    <li class="list-group-item list-group-item-danger">
+                      F. Michelena | 7 vs 3 | V. Álvarez
+                      <br />
+                      (20/10/2024)
+                    </li>
+                    <li class="list-group-item list-group-item-success">
+                      V. Álvarez | 7 vs 3 | F. Álvarez
+                      <br />
+                      (21/10/2024)
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cristian Hernández: -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="30"
+                    fill="currentColor"
+                    class="bi bi-clock-history svg-history"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022zm2.004.45a7 7 0 0 0-.985-.299l.219-.976q.576.129 1.126.342zm1.37.71a7 7 0 0 0-.439-.27l.493-.87a8 8 0 0 1 .979.654l-.615.789a7 7 0 0 0-.418-.302zm1.834 1.79a7 7 0 0 0-.653-.796l.724-.69q.406.429.747.91zm.744 1.352a7 7 0 0 0-.214-.468l.893-.45a8 8 0 0 1 .45 1.088l-.95.313a7 7 0 0 0-.179-.483m.53 2.507a7 7 0 0 0-.1-1.025l.985-.17q.1.58.116 1.17zm-.131 1.538q.05-.254.081-.51l.993.123a8 8 0 0 1-.23 1.155l-.964-.267q.069-.247.12-.501m-.952 2.379q.276-.436.486-.908l.914.405q-.24.54-.555 1.038zm-.964 1.205q.183-.183.35-.378l.758.653a8 8 0 0 1-.401.432z"
+                    />
+                    <path
+                      d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0z"
+                    />
+                    <path
+                      d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5"
+                    /></svg
+                  >Cristian Hernández
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body text-center">
+                  <strong>Partidos:</strong>
+                  <ul class="list-group">
+                    <li class="list-group-item list-group-item-danger">
+                      C. Rodríguez | 13 vs 0 | C. Hernández
+                      <br />
+                      (18/10/2024)
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Guillermo Barbiel: -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="30"
+                    fill="currentColor"
+                    class="bi bi-clock-history svg-history"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022zm2.004.45a7 7 0 0 0-.985-.299l.219-.976q.576.129 1.126.342zm1.37.71a7 7 0 0 0-.439-.27l.493-.87a8 8 0 0 1 .979.654l-.615.789a7 7 0 0 0-.418-.302zm1.834 1.79a7 7 0 0 0-.653-.796l.724-.69q.406.429.747.91zm.744 1.352a7 7 0 0 0-.214-.468l.893-.45a8 8 0 0 1 .45 1.088l-.95.313a7 7 0 0 0-.179-.483m.53 2.507a7 7 0 0 0-.1-1.025l.985-.17q.1.58.116 1.17zm-.131 1.538q.05-.254.081-.51l.993.123a8 8 0 0 1-.23 1.155l-.964-.267q.069-.247.12-.501m-.952 2.379q.276-.436.486-.908l.914.405q-.24.54-.555 1.038zm-.964 1.205q.183-.183.35-.378l.758.653a8 8 0 0 1-.401.432z"
+                    />
+                    <path
+                      d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0z"
+                    />
+                    <path
+                      d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5"
+                    /></svg
+                  >Guillermo Barbiel
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body text-center">
+                  <strong>Partidos:</strong>
+                  <ul class="list-group">
+                    <li class="list-group-item">Sin partidos jugados</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- David Villaroel: -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="30"
+                    fill="currentColor"
+                    class="bi bi-clock-history svg-history"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022zm2.004.45a7 7 0 0 0-.985-.299l.219-.976q.576.129 1.126.342zm1.37.71a7 7 0 0 0-.439-.27l.493-.87a8 8 0 0 1 .979.654l-.615.789a7 7 0 0 0-.418-.302zm1.834 1.79a7 7 0 0 0-.653-.796l.724-.69q.406.429.747.91zm.744 1.352a7 7 0 0 0-.214-.468l.893-.45a8 8 0 0 1 .45 1.088l-.95.313a7 7 0 0 0-.179-.483m.53 2.507a7 7 0 0 0-.1-1.025l.985-.17q.1.58.116 1.17zm-.131 1.538q.05-.254.081-.51l.993.123a8 8 0 0 1-.23 1.155l-.964-.267q.069-.247.12-.501m-.952 2.379q.276-.436.486-.908l.914.405q-.24.54-.555 1.038zm-.964 1.205q.183-.183.35-.378l.758.653a8 8 0 0 1-.401.432z"
+                    />
+                    <path
+                      d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0z"
+                    />
+                    <path
+                      d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5"
+                    /></svg
+                  >David Villaroel
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body text-center">
+                  <strong>Partidos:</strong>
+                  <ul class="list-group">
+                    <li class="list-group-item list-group-item-success">
+                      D. Villaroel | 3 vs 0 | D. Álvarez
+                      <br />
+                      (AFK D. Álvarez)
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Federico Michelena: -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive"
+                  aria-expanded="false"
+                  aria-controls="collapseFive"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="30"
+                    fill="currentColor"
+                    class="bi bi-clock-history svg-history"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022zm2.004.45a7 7 0 0 0-.985-.299l.219-.976q.576.129 1.126.342zm1.37.71a7 7 0 0 0-.439-.27l.493-.87a8 8 0 0 1 .979.654l-.615.789a7 7 0 0 0-.418-.302zm1.834 1.79a7 7 0 0 0-.653-.796l.724-.69q.406.429.747.91zm.744 1.352a7 7 0 0 0-.214-.468l.893-.45a8 8 0 0 1 .45 1.088l-.95.313a7 7 0 0 0-.179-.483m.53 2.507a7 7 0 0 0-.1-1.025l.985-.17q.1.58.116 1.17zm-.131 1.538q.05-.254.081-.51l.993.123a8 8 0 0 1-.23 1.155l-.964-.267q.069-.247.12-.501m-.952 2.379q.276-.436.486-.908l.914.405q-.24.54-.555 1.038zm-.964 1.205q.183-.183.35-.378l.758.653a8 8 0 0 1-.401.432z"
+                    />
+                    <path
+                      d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0z"
+                    />
+                    <path
+                      d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5"
+                    /></svg
+                  >Federico Michelena
+                </button>
+              </h2>
+              <div
+                id="collapseFive"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body text-center">
+                  <strong>Partidos:</strong>
+                  <ul class="list-group">
+                    <li class="list-group-item list-group-item-success">
+                      F. Michelena | 7 vs 3 | V. Álvarez
+                      <br />
+                      (20/10/2024)
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Darío Álvarez: -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseSix"
+                  aria-expanded="false"
+                  aria-controls="collapseSix"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="30"
+                    fill="currentColor"
+                    class="bi bi-clock-history svg-history"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022zm2.004.45a7 7 0 0 0-.985-.299l.219-.976q.576.129 1.126.342zm1.37.71a7 7 0 0 0-.439-.27l.493-.87a8 8 0 0 1 .979.654l-.615.789a7 7 0 0 0-.418-.302zm1.834 1.79a7 7 0 0 0-.653-.796l.724-.69q.406.429.747.91zm.744 1.352a7 7 0 0 0-.214-.468l.893-.45a8 8 0 0 1 .45 1.088l-.95.313a7 7 0 0 0-.179-.483m.53 2.507a7 7 0 0 0-.1-1.025l.985-.17q.1.58.116 1.17zm-.131 1.538q.05-.254.081-.51l.993.123a8 8 0 0 1-.23 1.155l-.964-.267q.069-.247.12-.501m-.952 2.379q.276-.436.486-.908l.914.405q-.24.54-.555 1.038zm-.964 1.205q.183-.183.35-.378l.758.653a8 8 0 0 1-.401.432z"
+                    />
+                    <path
+                      d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0z"
+                    />
+                    <path
+                      d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5"
+                    /></svg
+                  >Darío Álvarez
+                </button>
+              </h2>
+              <div
+                id="collapseSix"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body text-center">
+                  <strong>Partidos:</strong>
+                  <ul class="list-group">
+                    <li class="list-group-item list-group-item-danger">
+                      D. Villaroel | 3 vs 0 | D. Álvarez
+                      <br />
+                      (AFK D. Álvarez)
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Fernando Álvarez: -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseSeven"
+                  aria-expanded="false"
+                  aria-controls="collapseSeven"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="30"
+                    fill="currentColor"
+                    class="bi bi-clock-history svg-history"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022zm2.004.45a7 7 0 0 0-.985-.299l.219-.976q.576.129 1.126.342zm1.37.71a7 7 0 0 0-.439-.27l.493-.87a8 8 0 0 1 .979.654l-.615.789a7 7 0 0 0-.418-.302zm1.834 1.79a7 7 0 0 0-.653-.796l.724-.69q.406.429.747.91zm.744 1.352a7 7 0 0 0-.214-.468l.893-.45a8 8 0 0 1 .45 1.088l-.95.313a7 7 0 0 0-.179-.483m.53 2.507a7 7 0 0 0-.1-1.025l.985-.17q.1.58.116 1.17zm-.131 1.538q.05-.254.081-.51l.993.123a8 8 0 0 1-.23 1.155l-.964-.267q.069-.247.12-.501m-.952 2.379q.276-.436.486-.908l.914.405q-.24.54-.555 1.038zm-.964 1.205q.183-.183.35-.378l.758.653a8 8 0 0 1-.401.432z"
+                    />
+                    <path
+                      d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0z"
+                    />
+                    <path
+                      d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5"
+                    /></svg
+                  >Fernando Álvarez
+                </button>
+              </h2>
+              <div
+                id="collapseSeven"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body text-center">
+                  <strong>Partidos:</strong>
+                  <ul class="list-group">
+                    <li class="list-group-item list-group-item-success">
+                      F. Álvarez | 7 vs 5 | A. Ferreyra
+                      <br />
+                      (16/10/2024)
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Alejandro Ferreyra: -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseEight"
+                  aria-expanded="false"
+                  aria-controls="collapseEight"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="30"
+                    fill="currentColor"
+                    class="bi bi-clock-history svg-history"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022zm2.004.45a7 7 0 0 0-.985-.299l.219-.976q.576.129 1.126.342zm1.37.71a7 7 0 0 0-.439-.27l.493-.87a8 8 0 0 1 .979.654l-.615.789a7 7 0 0 0-.418-.302zm1.834 1.79a7 7 0 0 0-.653-.796l.724-.69q.406.429.747.91zm.744 1.352a7 7 0 0 0-.214-.468l.893-.45a8 8 0 0 1 .45 1.088l-.95.313a7 7 0 0 0-.179-.483m.53 2.507a7 7 0 0 0-.1-1.025l.985-.17q.1.58.116 1.17zm-.131 1.538q.05-.254.081-.51l.993.123a8 8 0 0 1-.23 1.155l-.964-.267q.069-.247.12-.501m-.952 2.379q.276-.436.486-.908l.914.405q-.24.54-.555 1.038zm-.964 1.205q.183-.183.35-.378l.758.653a8 8 0 0 1-.401.432z"
+                    />
+                    <path
+                      d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0z"
+                    />
+                    <path
+                      d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5"
+                    /></svg
+                  >Alejandro Ferreyra
+                </button>
+              </h2>
+              <div
+                id="collapseEight"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body text-center">
+                  <strong>Partidos:</strong>
+                  <ul class="list-group">
+                    <li class="list-group-item list-group-item-danger">
+                      F. Álvarez | 7 vs 5 | A. Ferreyra
+                      <br />
+                      (16/10/2024)
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Christian Rodríguez: -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseNine"
+                  aria-expanded="false"
+                  aria-controls="collapseNine"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="30"
+                    fill="currentColor"
+                    class="bi bi-clock-history svg-history"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022zm2.004.45a7 7 0 0 0-.985-.299l.219-.976q.576.129 1.126.342zm1.37.71a7 7 0 0 0-.439-.27l.493-.87a8 8 0 0 1 .979.654l-.615.789a7 7 0 0 0-.418-.302zm1.834 1.79a7 7 0 0 0-.653-.796l.724-.69q.406.429.747.91zm.744 1.352a7 7 0 0 0-.214-.468l.893-.45a8 8 0 0 1 .45 1.088l-.95.313a7 7 0 0 0-.179-.483m.53 2.507a7 7 0 0 0-.1-1.025l.985-.17q.1.58.116 1.17zm-.131 1.538q.05-.254.081-.51l.993.123a8 8 0 0 1-.23 1.155l-.964-.267q.069-.247.12-.501m-.952 2.379q.276-.436.486-.908l.914.405q-.24.54-.555 1.038zm-.964 1.205q.183-.183.35-.378l.758.653a8 8 0 0 1-.401.432z"
+                    />
+                    <path
+                      d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0z"
+                    />
+                    <path
+                      d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5"
+                    /></svg
+                  >Christian Rodríguez
+                </button>
+              </h2>
+              <div
+                id="collapseNine"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body text-center">
+                  <strong>Partidos:</strong>
+                  <ul class="list-group">
+                    <li class="list-group-item list-group-item-success">
+                      C. Rodríguez | 13 vs 0 | C. Hernández
+                      <br />
+                      (18/10/2024)
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-body-tertiary text-center mt-5">
+      <!-- title: -->
+      <div>
+        <p class="p-footer">Coast City Sports</p>
+      </div>
+
+      <!-- sponsor: -->
+      <div class="container text-center mt-4">
+        <div class="row mt-2">
+          <div class="col m-2">
+            <a href="https://www.ea.com/" target="_blank"
+              ><img src="../assets/icons/footer/icon-electronics-arts.png"
+            /></a>
+          </div>
+          <div class="col m-2">
+            <a href="https://www.tencent.com/en-us/" target="_blank"
+              ><img src="../assets/icons/footer/icon-tencent.png"
+            /></a>
+          </div>
+        </div>
+
+        <div class="row mt-2">
+          <div class="col m-2">
+            <a href="https://www.apple.com/" target="_blank"
+              ><img src="../assets/icons/footer/icon-apple.png"
+            /></a>
+          </div>
+          <div class="col m-2">
+            <a href="https://www.samsung.com/uy/" target="_blank"
+              ><img src="../assets/icons/footer/icon-samsung.png"
+            /></a>
+          </div>
+        </div>
+
+        <div class="row mt-2">
+          <div class="col m-2">
+            <a href="https://www.nike.com/ie/" target="_blank"
+              ><img src="../assets/icons/footer/icon-nike.png"
+            /></a>
+          </div>
+          <div class="col m-2">
+            <a href="https://www.pumastore.com.uy/" target="_blank"
+              ><img src="../assets/icons/footer/icon-puma.png"
+            /></a>
+          </div>
+        </div>
+
+        <div class="row mt-2">
+          <div class="col m-2">
+            <a href="https://www.fifa.com/en" target="_blank"
+              ><img src="../assets/icons/footer/icon-fifa.png"
+            /></a>
+          </div>
+          <div class="col m-2">
+            <a href="https://www.konami.com/en/" target="_blank"
+              ><img src="../assets/icons/footer/icon-konami.png"
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <div class="mt-5 pb-4">
+        <p class="p-footer">Contacto</p>
+
+        <div>
+          <a
+            href="mailto:coastcitysportsleaguecup@gmail.com"
+            class="btn btn-primary"
+            >Enviar Correo</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- scripts: -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

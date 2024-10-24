@@ -1,12 +1,12 @@
 {
-  "name": "coastcitysports",
+  "name": "projectccsports",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "file": "sass --watch scss:css"
+    "project": "sass --watch scss:css"
   },
   "keywords": [],
-  "author": "Coast City Sports",
+  "author": "",
   "license": "ISC",
-  "description": "All the necessary information about the Coast City League and the Golden Beach Cup"
+  "description": ""
 }
